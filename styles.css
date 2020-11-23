@@ -1,7 +1,5 @@
 /* Master styles */
 
-@import "templatecolours.css";
-
 body {
    max-width:960;
    margin-left: auto;
@@ -18,6 +16,11 @@ h1{
 p, h2, h3, h4, h5, a{
     font-family:'Roboto', sans-serif;
     font-weight:400;
+}
+
+h3, h4, h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 #logo {
@@ -159,3 +162,97 @@ p, h2, h3, h4, h5, a{
       margin-right: auto;
       color: white;
   }
+
+  /*AUTOMATIC SLIDESHOW CSS START*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  background-color: purple;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 97.55%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  background-color: purple; 
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*Automatic Slideshow CSS END*/
+
+/* Colourings START*/
+
+
+footer{
+  background-color:purple;
+  color: white;
+}
+
+aside p, h3, h4{
+  color:white;
+  padding: 10px;
+  margin:10px;
+}
+/*Colourings END*/
+
+/*Image Instructions START*/
+#hos {
+  width: 200px;
+  float:left;
+  padding-right:10px;
+}
+/*Image Instructions END*/

@@ -2,7 +2,7 @@
 <html>
     <head>
 
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5fae61288fbbd6001256e538&product=inline-follow-buttons" async="async"></script>
+      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5fae61288fbbd6001256e538&product=inline-follow-buttons' async='async'></script>
         <meta charset="utf-8"/>
         <title>Page Title</title>
         <link rel="stylesheet" href="styles.css">
@@ -35,13 +35,16 @@
            <!--Initiate Facebook SDK for JavaScript END-->
 
         <!--JavaScript for Facebook Login Button Introduction START-->
-      <div id="fb-root"></div>
+        <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=808687709962913&autoLogAppEvents=1" nonce="SvP3KuIB"></script>
           <!--JavaScript for Facebook Login Button Introduction END-->
 
+<!--HEADER START-->
+<header>
+
 <!--LOGO START AND TOP IMAGES-->
         <div id="logo">
-            <img src="logo.png"/>
+            <img src="images/logo.png"/>
         </div>
 
         <!--Facebook Login Button START-->
@@ -49,7 +52,9 @@
         <!--Facebook Login Button END-->
 
         <div id="content">
-            <img src="rainbowshort1.png" class="ribbon"/>
+          <a href="https://www.rguunion.co.uk/">
+            <img src="images/rainbowshort1.png" class="ribbon"/>
+          </a>
         </div>
 <!--LOGO START AND TOP IMAGES END-->
       
@@ -102,15 +107,87 @@
         </div>
         <!--NAVIGATION END-->
         
+</header>
+
         <!--FRAME 1 START-->
-        <hr style="height:1px;border-width:0;color:purple;background-color: purple">
+        <hr style="height:3px;border-width:0;color:purple;background-color: purple">
         <!--FRAME 1 END-->
         
-        <!--LOWER FRAME START-->
-        <hr style="height:1px;border-width:0;color:purple;background-color: purple">
-        <!--LOWER FRAME END-->
-<!--FOOTER START -->
+<!--AUTOMATIC SLIDESHOW FOR HOMEPAGE START2-->
 
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="images/Slideshow1.jpg" style="width:100%">
+      <div class="text">Clothes Swaps</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="images/Slideshow2.jpg" style="width:100%">
+      <div class="text">RGU Fashion Show Winter 2020</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="images/Slideshow3.jpg" style="width:100%">
+      <div class="text">Meeting Industry Experts</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/Slideshow4.jpg" style="width:100%">
+        <div class="text">Teamwork</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/Slideshow5.jpg" style="width:100%">
+        <div class="text">Workshops</div>
+      </div>
+
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+
+<!--AUTOMATIC SLIDESHOW FOR HOMEPAGE END2-->
+
+        <!--LOWER FRAME START-->
+        <hr style="height:5px;border-width:0;color:purple;background-color: purple">
+        <!--LOWER FRAME END-->
+
+<!--FOOTER START -->
+<footer>
 <style>
     .footer {
       position: fixed;
@@ -122,15 +199,16 @@
       text-align: center;
     }
     </style>
-    
-  <!-- Social Media Buttons START--><div class="sharethis-inline-follow-buttons"></div><!-- Social Media Buttons END -->
 
     <div class="footer">
 
-
-
          <p>Footer</p>
     </div>
+</footer>
 <!--FOOTER END -->
+
+    <!-- Social Media Buttons START-->
+    <div class="sharethis-inline-follow-buttons" style="margin-top:10px"></div>
+    <!-- Social Media Buttons END -->
     </body>
 </html>

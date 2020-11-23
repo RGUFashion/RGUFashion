@@ -2,7 +2,7 @@ body{
     background-color:white;
 }
 header{
-    background-color: green;
+    background-color: white;
 }
 main{
     background-color:blue;
@@ -15,4 +15,20 @@ aside{
 }
 article{
     background-color: purple;
+}
+
+/* COLOURINGS*/
+#news{
+    background-color:#DBC9DF;
+}
+
+#events{
+    background-color:#782A7E;
+}
+footer{
+    background-color:#363636
+}
+
+aside p, h3, h4{
+    color:white;
 }
