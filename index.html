@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5fae61288fbbd6001256e538&product=inline-follow-buttons' async='async'></script>
+        <meta charset="utf-8"/>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+
+        <!--Initiate Facebook SDK for JavaScript START-->
+        <script>
+            window.fbAsyncInit = function() {
+              FB.init({
+                appId      : '{your-app-id}',
+                cookie     : true,
+                xfbml      : true,
+                version    : '{api-version}'
+              });
+                
+              FB.AppEvents.logPageView();   
+                
+            };
+          
+            (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "https://connect.facebook.net/en_US/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+          </script>
+           <!--Initiate Facebook SDK for JavaScript END-->
+
+        <!--JavaScript for Facebook Login Button Introduction START-->
+        <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0&appId=808687709962913&autoLogAppEvents=1" nonce="SvP3KuIB"></script>
+          <!--JavaScript for Facebook Login Button Introduction END-->
+
+<!--HEADER START-->
+<header>
+
+<!--LOGO START AND TOP IMAGES-->
+        <div id="logo">
+            <img src="images/logo.png"/>
+        </div>
+
+        <!--Facebook Login Button START-->
+        <div class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="true" data-width=""></div>
+        <!--Facebook Login Button END-->
+
+        <div id="content">
+          <a href="https://www.rguunion.co.uk/">
+            <img src="images/rainbowshort1.png" class="ribbon"/>
+          </a>
+        </div>
+<!--LOGO START AND TOP IMAGES END-->
+      
+<!--NAVIGATION START-->          
+        <div class="container"></div>
+            <div class="topnav" id="myTopnav"> 
+                <div class="nav-wrapper">
+                    <div class="left-side">
+                        <div class="nav-link-wrapper">
+                            <a class="active" href="index.html">Home</a>
+                        </div>
+                            <div class="nav-link-wrapper">
+                                <a href="Image Gallery.html">Image Gallery</a>
+                            </div>
+                                <div class="nav-link-wrapper">
+                                    <a href="Events Calendar.html">Events Calendar</a>
+                                </div>
+                                
+                                    <div class="nav-link-wrapper">
+                                        <a href="Contact Us.html">Contact Us</a>
+                                    </div>
+
+                                    <!--DROP DOWN MENU START-->
+                                        <div class="dropdown">
+                                            <button class="dropbtn"> 
+                                   
+                                                <div class="nav-link-wrapper">
+                                                    <div class="nav-wrapper">
+                                                    <a href="Members Area.html">Members Area</a>
+                                                    </div>
+                                            </button>
+                                                        <div class= "dropdown-content">
+                                                            <a href="Want to Join.html">Want to Join?</a>
+                                                            <a href="Career Corner.html">Career Corner</a>
+                                                            <a href="Clothes Swap.html">Clothes Swap</a>
+                                                            <a href="RGU Fashion Week.html">RGU Fashion Week</a>
+                                                            <a href="Trips.html">Trips</a>
+                                                            <a href="Workshops.html">Workshops</a>
+                                                        </div>
+                                                    
+                                                </div>
+                                        </div>
+                                    <!--DROP DOWN MENU END-->
+                    </div>
+        
+                </div>
+           
+            </div>
+           
+        </div>
+        <!--NAVIGATION END-->
+        
+</header>
+
+        <!--FRAME 1 START-->
+        <hr style="height:3px;border-width:0;color:purple;background-color: purple">
+        <!--FRAME 1 END-->
+        
+<!--AUTOMATIC SLIDESHOW FOR HOMEPAGE START2-->
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="images/Slideshow1.jpg" style="width:100%">
+      <div class="text">Clothes Swaps</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="images/Slideshow2.jpg" style="width:100%">
+      <div class="text">RGU Fashion Show Winter 2020</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="images/Slideshow3.jpg" style="width:100%">
+      <div class="text">Meeting Industry Experts</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/Slideshow4.jpg" style="width:100%">
+        <div class="text">Teamwork</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/Slideshow5.jpg" style="width:100%">
+        <div class="text">Workshops</div>
+      </div>
+
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+    </script>
+
+<!--AUTOMATIC SLIDESHOW FOR HOMEPAGE END2-->
+
+        <!--LOWER FRAME START-->
+        <hr style="height:5px;border-width:0;color:purple;background-color: purple">
+        <!--LOWER FRAME END-->
+
+<!--FOOTER START -->
+<footer>
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color:white;
+      color: white;
+      text-align: center;
+    }
+    </style>
+
+    <div class="footer">
+
+         <p>Footer</p>
+    </div>
+</footer>
+<!--FOOTER END -->
+
+    <!-- Social Media Buttons START-->
+    <div class="sharethis-inline-follow-buttons" style="margin-top:10px"></div>
+    <!-- Social Media Buttons END -->
+    </body>
+</html>
