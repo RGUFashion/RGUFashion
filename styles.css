@@ -167,7 +167,7 @@ h3, h4, h5{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 700px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
@@ -180,7 +180,7 @@ h3, h4, h5{
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 97.55%;
+  width: 97%;
   text-align: center;
 }
 
