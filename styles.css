@@ -24,24 +24,33 @@ h3, h4, h5{
 }
 
 #logo {
-    position: fixed;
-    top:50px;
-    left:50px;
+    /*position: fixed;*/
+    /*top:100px;
+    left:100px;*/
+    float:left;
+    padding-left: 52px;
+    padding-top: 25px;
+   
+}
+
+#numberone {
+  padding-top: 15px;
 }
 
 .fb-login-button {
-    position: fixed;
-    top: 128px;
-    left: 50px;
+    /*position: fixed;*/
+  left: 5px;
+  top: 30px;
+
 }
 
 #content {
-    position: relative;
+  float: right;
+
 }
 #content img {
-    position: absolute;
-    top: 0px;
-    right: 50px;
+    float: right;
+    padding-right: 52px;
 }
 
 .container {
