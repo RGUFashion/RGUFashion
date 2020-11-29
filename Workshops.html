@@ -13,25 +13,25 @@
   box-sizing: border-box;
 }
     
-.row {
+.row1 {
   margin: 10px -16px;
 }
 
 /* Add padding BETWEEN each column */
-.row,
+.row1,
 .row > .column {
   padding: 8px;
 }
 
 /* Create three equal columns that floats next to each other */
-.column {
+.column1 {
   float: left;
   width: 33.33%;
   display: none; /* Hide all elements by default */
 }
 
 /* Clear floats after rows */ 
-.row:after {
+.row1:after {
   content: "";
   display: table;
   clear: both;
@@ -185,21 +185,21 @@
 </div>
 
 <!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column FS2019">
+<div class="row1">
+  <div class="column1 FS2019">
     <div class="content">
       <img src="im1.jpg" alt="Mountains" style="width:100%">
       <h4>Fashion Show 2019</h4>
     </div>
   </div>
-  <div class="column FS2019">
+  <div class="column1 FS2019">
     <div class="content">
       <img src="im2.jpg" alt="Lights" style="width:100%">
       <h4>Lights</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column FS2018">
+  <div class="column1 FS2018">
     <div class="content">
       <img src="im3.jpg" alt="Nature" style="width:100%">
       <h4>Forest</h4>
@@ -207,21 +207,21 @@
     </div>
   </div>
 
-  <div class="column FS2018">
+  <div class="column1 FS2018">
     <div class="content">
       <img src="im4.jpg" alt="Car" style="width:100%">
       <h4>Retro</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column Other">
+  <div class="column1 Other">
     <div class="content">
       <img src="im5.jpg" alt="Car" style="width:100%">
       <h4>Fast</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column Other">
+  <div class="column1 Other">
     <div class="content">
       <img src="im6.jpg" alt="Car" style="width:100%">
       <h4>Classic</h4>
@@ -229,21 +229,21 @@
     </div>
   </div>
 
-  <div class="column FS2019">
+  <div class="column1 FS2019">
     <div class="content">
       <img src="im7.jpg" alt="People" style="width:100%">
       <h4>Girl</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column FS2018">
+  <div class="column1 FS2018">
     <div class="content">
       <img src="im8.jpg" alt="People" style="width:100%">
       <h4>Man</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column Other">
+  <div class="column1 Other">
     <div class="content">
       <img src="im9jpg" alt="People" style="width:100%">
       <h4>Woman</h4>
@@ -260,7 +260,7 @@
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("column");
+  x = document.getElementsByClassName("column1");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
