@@ -7,31 +7,74 @@
         <title>Page Title</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
-
+    
 <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
+* {
+  box-sizing: border-box;
+}
+    
+/* Center website */
+.main1 {
+  max-width: 1000px;
+  margin: auto;
+} 
+    
+.row1 {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row1,
+.row1 > .column1 {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
   float: left;
-  width: 180px;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
 }
 
-div.gallery:hover {
-  border: 1px solid #777;
+/* Clear floats after rows */ 
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-div.gallery img {
-  width: 100%;
-  height: 100%;
+/* Content */
+.content {
+  background-color: #af82b9;
+  padding: 0px;
 }
-div.desc {
-  padding: 15px;
-  text-align: center;
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn1 {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: #ddd;
+}
+
+.btn1.active {
+  background-color: #666;
+  color: white;
 }
 </style>
         
     </head>
-    <body>
+
 
         <!--Initiate Facebook SDK for JavaScript START-->
         <script>
@@ -95,10 +138,10 @@ div.desc {
                 <div class="nav-wrapper">
                     <div class="left-side">
                         <div class="nav-link-wrapper">
-                            <a class="active" href="index.html">Home</a>
+                            <a href="index.html">Home</a>
                         </div>
                             <div class="nav-link-wrapper">
-                                <a href="Image Gallery.html">Image Gallery</a>
+                               <a class="active" href="Image Gallery.html">Image Gallery</a>
                             </div>
                                 <div class="nav-link-wrapper">
                                     <a href="Events Calendar.html">Events Calendar</a>
@@ -137,66 +180,179 @@ div.desc {
            
         </div>
         <!--NAVIGATION END-->
-
-        <body>
-<!--IMAGE GALLERY START-->
-<div class="gallery">
-  <a target="_blank" href="im1.jpg">
-    <img src="im1.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="im3.jpg">
-    <img src="im3.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="im4.jpg">
-    <img src="im4.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-           
-<div class="gallery">
-  <a target="_blank" href="im5.jpg">
-    <img src="im5.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="im6.jpg">
-    <img src="im6.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="im7.jpg">
-    <img src="im7.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="im8.jpg">
-    <img src="im8.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="im9.jpg">
-    <img src="im9.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-            
-</body>
-<!--IMAGE GALLERY END-->
         
-</html>
+        <body>
+            
+       <div id="myBtnContainer">
+  <button class="btn1 active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn1" onclick="filterSelection('FS2019')"> Fashion Show 2019</button>
+  <button class="btn1" onclick="filterSelection('FS2018')"> Fashion Show 2018</button>
+  <button class="btn1" onclick="filterSelection('Other')"> Other</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row1">
+  <div class="column1 Other">
+    <div class="content">
+      <img src="im1.jpg" alt="Mountains" style="width:100%; height:280px">
+        <h4>Fashion Trip</h4>
+    </div>
+  </div>
+  <div class="column1 Other">
+    <div class="content">
+      <img src="im2.jpg" alt="Lights" style="width:100%; height:280px">
+      <h4>Shopping Trip 2018</h4>
+    </div>
+  </div>
+  <div class="column1 FS2019">
+    <div class="content">
+      <img src="im3.jpg" alt="Nature" style="width:100%; height:280px">
+      <h4>Fashion Show 2019</h4>
+    </div>
+  </div>
+
+  <div class="column1 FS2018">
+    <div class="content">
+      <img src="im4.jpg" alt="Car" style="width:100%; height:280px">
+      <h4>Makeup Masterclass</h4>
+    </div>
+  </div>
+  <div class="column1 FS2018">
+    <div class="content">
+      <img src="im5.jpg" alt="Car" style="width:100%; height:280px">
+      <h4>Fashion Show 2018</h4>
+    </div>
+  </div>
+  <div class="column1 Other">
+    <div class="content">
+      <img src="im6.jpg" alt="Car" style="width:100%; height:280px">
+      <h4>Fashion Shoot Masterclass</h4>
+    </div>
+  </div>
+
+  <div class="column1 FS2019">
+    <div class="content">
+      <img src="im7.jpg" alt="People" style="width:100%; height:280px">
+      <h4>Fashion Show Preparations</h4>
+    </div>
+  </div>
+  <div class="column1 Other">
+    <div class="content">
+      <img src="im8.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Teamwork</h4>
+    </div>
+  </div>
+  <div class="column1 Other">
+    <div class="content">
+      <img src="im11.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Shopping Trip</h4>
+    </div>
+  </div>
+  <div class="column1 Other">
+    <div class="content">
+      <img src="im12.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Manicure Masterclass</h4>
+    </div>
+  </div>
+   <div class="column1 FS2019">
+    <div class="content">
+      <img src="im13.jpg" alt="People" style="width:100%; height:280px">
+      <h4>Designer of the Year</h4>
+    </div>
+  </div>
+  <div class="column1 FS2018">
+    <div class="content">
+      <img src="im14.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Model of the Year</h4>
+    </div>
+  </div>
+  <div class="column1 FS2019">
+    <div class="content">
+      <img src="im15.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Fashion Show 2019</h4>
+    </div>
+  </div>
+   <div class="column1 Other">
+    <div class="content">
+      <img src="im16.jpg" alt="People" style="width:100%; height:280px">
+      <h4>Society Flash Mob</h4>
+    </div>
+  </div>
+  <div class="column1 FS2018">
+    <div class="content">
+      <img src="im17.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Fashion Show Preparation</h4>
+    </div>
+  </div>
+  <div class="column1 FS2018">
+    <div class="content">
+      <img src="im18.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Fashion Show Rehersal</h4>
+    </div>
+  </div>
+   <div class="column1 FS2019">
+    <div class="content">
+      <img src="im19.jpg" alt="People" style="width:100%; height:280px">
+      <h4>Fashion Show Makeup</h4>
+    </div>
+  </div>
+  <div class="column1 FS2018">
+    <div class="content">
+      <img src="im20.jpg" alt="People" style="width:100%; height:280px">
+        <h4>Fashion Show Backstage</h4>
+    </div>
+  </div>
+    <!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column1");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btn1Container = document.getElementById("myBtn1Container");
+var btn1s = btn1Container.getElementsByClassName("btn1");
+for (var i = 0; i < btns.length; i++) {
+  btn1s[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+            
+        </body>
+        </html>
