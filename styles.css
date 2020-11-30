@@ -88,7 +88,7 @@ h3, h4, h5{
 
 
 /* Add a purple background color to the top navigation */
-/*.topnav {
+.topnav {
     background-color: purple;
 
     margin-top: 135px;
@@ -97,7 +97,7 @@ h3, h4, h5{
  padding-bottom: 0px;
  padding-top: 0px;
 
-  }*/
+  }
   
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -183,7 +183,7 @@ h3, h4, h5{
 }
 
 /* Caption text */
-.text {
+.textss {
   color: #f2f2f2;
   font-size: 30px;
   background-color: purple;
