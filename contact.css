@@ -4,7 +4,7 @@ html {
 
 /* Main Body Styling */
 body {
-    background-image: img src= "Wallpaper.jpg"
+    background-image: Wallpaper.jpg
 }
 
 .contactUs {
@@ -21,25 +21,25 @@ body {
     flex-direction: column;
 }
 
-.contactUs .content{
+.contactUs .content1{
     max-width:800px;
     text-align:center;
     font-size: 30px;
     color:rgb(117, 27, 126);
 }
 
-.contactUs .content .h2{
+.contactUs .content1 .h2{
     font-size: 36px;
     font-weight: 500;
     color:rgb(117, 27, 126);
 }
 
-.contactUs .content p{
+.contactUs .content1 p{
     font-weight: 300;
     color:rgb(117, 27, 126);
 }
 
-.container{
+.container1{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -47,19 +47,19 @@ body {
     margin-top: 30px;
 }
 
-.container .contactInfo{
+.container1 .contactInfo{
     width: 30%;
     display: flex;
     flex-direction: column;
 }
 
-.container .contactInfo .box{
+.container1 .contactInfo .box{
     position: relative;
     padding: 20px 0;
     display: flex;
 }
 
-.container .contactInfo .box .icon{
+.container1 .contactInfo .box .icon{
    min-width: 60px;
    height: 60px;
    color:#fff;
@@ -71,7 +71,7 @@ body {
    font-size: 22px;
 } 
 
-.container .contactInfo .box .text{
+.container1 .contactInfo .box .text{
    display: flex;
    margin-left: 20px;
    font-size: 16px;
@@ -80,7 +80,7 @@ body {
    font-weight: 300; 
 }
 
-.container .contactInfo .box .text .h3{
+.container1 .contactInfo .box .text .h3{
     font-weight: 500;
     color: rgb(117, 27, 126);
 }
