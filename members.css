@@ -58,7 +58,7 @@ mainmembers .MembersPerks h2{
 
 
 /* Aside Styles */
-aside .SocialMedias {
+asidemembers .SocialMedias {
     border-radius: 10px;
     width: 30%;
     padding: 20px;
@@ -66,7 +66,7 @@ aside .SocialMedias {
     float: left;
 }
 
-aside .SocialMedias h1{
+asidemembers .SocialMedias h1{
     color: rgb(117, 27, 126);
 }
 
