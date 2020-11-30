@@ -2,63 +2,6 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* Title and Logo */
-header {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-
-header img {
-    margin: 10px 10px 10px 10px;
-    width:150px;
-    height:150px;
-    float: left;
-}
-
-header p {
-    text-align: center;
-    font-size: 32pt;
-    color:rgb(117, 27, 126);
-    max-width:1350px;
-}
-
-/* Horizontal Menu */
-nav {
-    background-color: rgb(117, 27, 126);
-    display: block;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-  
-nav li {
-    float: left;
-    width: 280px;
-    
-}
-  
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav li a:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(117, 27, 126)
-}
-
-
-
-
 /* Main Body Styling */
 body {
     background-image: url('C:/Users/jkamw/Desktop/Digital Media/CM1101/Assignment/Wallpaper.jpg')
