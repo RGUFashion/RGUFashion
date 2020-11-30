@@ -4,7 +4,7 @@ html {
 
 /* Main Body Styling */
 body {
-    background-image: Wallpaper.jpg
+    background-image: url(Images/Wallpaper.jpg);
 }
 
 .contactUs {
