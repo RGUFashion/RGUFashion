@@ -7,7 +7,7 @@ body {
 
 
 /* Main Body Styling */
-mainmembers{
+main{
     border-radius: 10px;
     width: 60%;
     padding: 20px;
@@ -15,11 +15,11 @@ mainmembers{
     float: left;
 }
 
-mainmembers h1{
+main h1{
     color: rgb(117, 27, 126);
 }
 
-mainmembers h2{
+main h2{
     color: rgb(117, 27, 126);
 }
 
@@ -27,18 +27,18 @@ mainmembers h2{
     box-sizing: border-box;
 }
 
-mainmembers .MembersNews{
+main .MembersNews{
     background-color: #fff;
     border: 3px solid rgb(117, 27, 126);
     float:left;
     width: 40%;   
 }
 
-mainmembers .MembersNews h2{
+main .MembersNews h2{
     text-align: center;
 }
 
-mainmembers .MembersPerks{
+main .MembersPerks{
     background-color: #fff;
     border: 3px solid rgb(117, 27, 126);
     float:left;
@@ -46,7 +46,7 @@ mainmembers .MembersPerks{
     margin-left: 1%;
 }
 
-mainmembers .MembersPerks h2{
+main .MembersPerks h2{
     text-align: center;
 }
 
@@ -58,7 +58,7 @@ mainmembers .MembersPerks h2{
 
 
 /* Aside Styles */
-asidemembers .SocialMedias {
+aside .SocialMedias {
     border-radius: 10px;
     width: 30%;
     padding: 20px;
@@ -66,7 +66,7 @@ asidemembers .SocialMedias {
     float: left;
 }
 
-asidemembers .SocialMedias h1{
+aside .SocialMedias h1{
     color: rgb(117, 27, 126);
 }
 
