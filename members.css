@@ -1,0 +1,171 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Styles */
+header {
+    
+}
+
+/* Title and Logo */
+header img {
+    margin: 10px 10px 10px 10px;
+    width:150px;
+    height:150px;
+    float: left;
+}
+
+header p {
+    text-align: center;
+    font-size: 32pt;
+    color:rgb(117, 27, 126);
+    max-width:1350px;
+}
+
+/* Horizontal Menu */
+nav {
+    background-color: rgb(117, 27, 126);
+    display: block;
+    font-size:
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav li {
+    float: left;
+    width: 280px;
+    
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(117, 27, 126)
+}
+
+/* Body styles */
+body {
+    background-image: url('C:/Users/jkamw/Desktop/Digital Media/CM1101/Assignment/Wallpaper.jpg')
+}
+
+
+
+/* Main Body Styling */
+main {
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+}
+
+main h1{
+    color: rgb(117, 27, 126);
+}
+
+main h2{
+    color: rgb(117, 27, 126);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main .MembersNews{
+    background-color: #fff;
+    border: 3px solid rgb(117, 27, 126);
+    float:left;
+    width: 40%;   
+}
+
+main .MembersNews h2{
+    text-align: center;
+}
+
+main .MembersPerks{
+    background-color: #fff;
+    border: 3px solid rgb(117, 27, 126);
+    float:left;
+    width: 40%;
+    margin-left: 1%;
+}
+
+main .MembersPerks h2{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aside Styles */
+aside {
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+}
+
+aside h1{
+    color: rgb(117, 27, 126);
+}
+
+
+
+
+
+
+
+
+
+
+/* Table */
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+table tr:nth-child(even){
+    background-color: white;
+}
+  
+table tr:hover {
+    background-color: #ddd;
+}
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
