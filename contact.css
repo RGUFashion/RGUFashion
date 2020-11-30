@@ -53,13 +53,13 @@ body {
     flex-direction: column;
 }
 
-.container7 .contactInfo .box{
+.container7 .contactInfo .box1{
     position: relative;
     padding: 20px 0;
     display: flex;
 }
 
-.container7 .contactInfo .box .icon{
+.container7 .contactInfo .box1 .icon{
    min-width: 60px;
    height: 60px;
    color:#fff;
@@ -71,7 +71,7 @@ body {
    font-size: 22px;
 } 
 
-.container7 .contactInfo .box .text{
+.container7 .contactInfo .box1 .text{
    display: flex;
    margin-left: 20px;
    font-size: 16px;
@@ -80,7 +80,7 @@ body {
    font-weight: 300; 
 }
 
-.container7 .contactInfo .box .text .h3{
+.container7 .contactInfo .box1 .text .h3{
     font-weight: 500;
     color: rgb(117, 27, 126);
 }
